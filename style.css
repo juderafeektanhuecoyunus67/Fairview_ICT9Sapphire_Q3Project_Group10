@@ -1,0 +1,63 @@
+/* General Layout */
+html, body { height: 100%; margin: 0; }
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('romain-maistre-bazin-process-light.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(202, 195, 195);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navs */
+.navbar-custom { background-color: black; border-bottom: 2px solid #1c1111; display: flex; justify-content: space-between; align-items: center; }
+.nav-box { border-right: 1px solid #c8c4c4; padding: 15px 30px; color: rgb(255, 255, 255); font-weight: bold; text-decoration: none; }
+.nav-box:hover { background: rgba(255,255,255,0.1); }
+
+.search-area { padding: 10px; display: flex; gap: 10px; }
+.go-btn { background: #c1db5c; color: black; border: none; padding: 10px 15px; font-weight: bold; cursor: pointer; }
+.go-btn1 { background: #3a535b; color: white; border: none; padding: 10px 15px; font-weight: bold; cursor: pointer; }
+
+/* Main Content Containers */
+.hero-section { 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    /* THIS PUSHES ONE TO TOP AND ONE TO BOTTOM */
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 40px 20px; 
+}
+
+/* Top Section Styling */
+.welcome-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 60px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #333;
+}
+.logo-circle {
+    width: 120px; height: 120px; border-radius: 50%;
+    border: 3px solid #555; margin: 15px auto;
+    overflow: hidden; background: #222;
+    display: flex; justify-content: center; align-items: center;
+}
+.brand-highlight { font-weight: bold; color: #ffffff; font-size: 1.2em; }
+
+/* Bottom Section Styling */
+.glass-panel { 
+    background: rgba(0, 0, 0, 0.85); 
+    padding: 40px; 
+    border-radius: 15px; 
+    border: 1px solid #444; 
+    width: 100%; 
+    max-width: 800px; 
+    text-align: center; 
+}
+
+/* Footer */
+.footer-bar { width: 100%; padding: 15px 0; background-color: rgba(0, 0, 0, 0.85); color: #aaa; text-align: center; font-size: 0.85em; }
