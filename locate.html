@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JR Travels - Location</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body { height: 100%; margin: 0; }
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('romain-maistre-bazin-process-light.gif');
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation Styles */
+        .navbar-custom { background-color: black; border-bottom: 2px solid #1c1111; display: flex; justify-content: space-between; align-items: center; }
+        .nav-box { border-right: 1px solid #c8c4c4; padding: 15px 40px; color: white; font-weight: bold; text-decoration: none; }
+        .search-area { padding: 10px; display: flex; gap: 10px; }
+        .go-btn { background: #c1db5c; color: black; border: none; padding: 10px 15px; font-weight: bold; cursor: pointer; }
+        .go-btn1 { background: #3a535b; color: white; border: none; padding: 10px 15px; font-weight: bold; cursor: pointer; }
+
+        /* Map Section */
+        .map-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .map-container {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        .map-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* The actual map frame */
+        iframe {
+            width: 100%;
+            height: 480px;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        .footer-bar { width: 100%; padding: 15px 0; background-color: rgba(0, 0, 0, 0.85); color: #aaa; text-align: center; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+
+    <header class="navbar-custom">
+        <div style="display: flex;">
+            <a href="index.html" class="nav-box">Home</a>
+            <a href="locate.html" class="nav-box">Locate</a>
+            <a href="schedule.html" class="nav-box">Schedule</a>
+            <a href="help.html" class="nav-box">Help</a>
+        </div>
+        <div class="search-area">
+            <button class="go-btn" onclick="window.location.href='registration.html'">Book now</button>
+            <button class="go-btn1" onclick="window.location.href='registration.html'">Register</button>
+        </div>
+    </header>
+
+    <main class="map-wrapper">
+        <div class="map-container">
+            <div class="map-header">
+                <img src="Google maps.png" alt="GMap" width="100">
+                <h2>Google maps for our reference inspired by JH Travels!</h2>
+            </div>
+            
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123512.79326325946!2d121.018287!3d14.652156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b116d9119937%3A0xc66087b320d3f443!2sQuezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph"></iframe> 
+
+
+        </div>
+    </main>
+
+    <footer class="footer-bar">
+        Jude T. Yunus & Hanzo Rui Del Rosario | Grade 9-Sapphire ©2026
+    </footer>
+
+</body>
+</html>
